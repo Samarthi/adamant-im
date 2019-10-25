@@ -69,7 +69,7 @@ export default {
   computed: {
     transactions () {
       const transactions = this.$store.getters[`${this.cryptoModule}/sortedTransactions`]
-      const address = this.$store.state[this.crypto.toLowerCase()].address
+      const address = this.$store.state[this.cryptoModule].address
       return transactions.filter(tx => {
         // Filter invalid "fake" transactions (from chat rich message)
         return tx.hasOwnProperty('amount') && (

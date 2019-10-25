@@ -23,6 +23,10 @@
     ],
     "dash": [
       { "url": "https://dashnode1.adamant.im" }
+    ],
+    "lisk": [
+      { "url": "https://node01.lisk.io:443" },
+      { "url": "https://node02.lisk.io:443" }
     ]
   },
   "env": "development"
