@@ -1,9 +1,12 @@
 {
-  "minApiVersion": "0.6.0",
+  "minApiVersion": "0.5.2",
   "server": {
     "adm": [
       {
         "url": "https://ahead.adamant.im"
+      },
+      {
+        "url": "https://lake.adamant.im"
       }
     ],
     "eth": [
