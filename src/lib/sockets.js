@@ -148,7 +148,10 @@ export class SocketClient extends EventEmitter {
   subscribeToEvents () {
     if (this.connection) {
       this.connection.on('newTrans', transaction => {
-        if (transaction.type === 0 || transaction.type === 8) this.emit('newMessage', transaction)
+        if (transaction.type === 0 || transaction.type === 8) {
+          console.log(JSON.stringify(transaction, null, 4))
+          this.emit('newMessage', transaction)
+        }
       })
     }
   }
